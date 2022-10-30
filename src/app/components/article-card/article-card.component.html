@@ -1,0 +1,26 @@
+<div class="article-card-container">
+  <img
+    [attr.alt]="image_alt"
+    [attr.src]="image_src"
+    class="article-card-image"
+  />
+  <div class="article-card-container1">
+    <h3 class="article-card-text healine">{{ new_prop }}</h3>
+    <div class="article-card-container2">
+      <span class="article-card-text1">{{ description }}</span>
+    </div>
+    <div class="article-card-container3">
+      <img
+        [attr.alt]="avatar_alt"
+        [attr.src]="avatar_src"
+        class="article-card-image1"
+      />
+      <div class="article-card-container4">
+        <span class="article-card-text2">{{ name }}</span>
+        <div class="article-card-container5">
+          <span class="article-card-text3 textSM">{{ time }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
