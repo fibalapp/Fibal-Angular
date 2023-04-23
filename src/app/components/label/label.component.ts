@@ -8,6 +8,5 @@ import { Component, Input } from '@angular/core'
 export class Label {
   @Input()
   text: string = 'Text'
-
   constructor() {}
 }

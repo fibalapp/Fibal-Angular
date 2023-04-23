@@ -10,6 +10,5 @@ export class Counter {
   type: string = 'Friends'
   @Input()
   number: string = '22'
-
   constructor() {}
 }

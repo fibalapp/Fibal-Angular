@@ -10,6 +10,5 @@ export class SecondaryButton {
   button: string = 'Button'
   @Input()
   rootClassName: string = ''
-
   constructor() {}
 }
