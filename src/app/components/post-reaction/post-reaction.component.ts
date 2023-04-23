@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core'
 })
 export class PostReaction {
   @Input()
-  image_src: string = '/playground_assets/team4-200h.png'
+  image_src: string = '/assets/playground_assets/team4-200h.png'
   @Input()
   name: string = 'John Snow'
   @Input()
@@ -19,6 +19,5 @@ export class PostReaction {
     'You have the opportunity to play this game of life you need to appreciate every moment.'
   @Input()
   shares: string = '2'
-
   constructor() {}
 }

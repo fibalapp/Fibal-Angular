@@ -7,11 +7,22 @@
   flex-direction: column;
   justify-content: center;
 }
+.member-details-container1 {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-round);
+  background-size: cover;
+  justify-content: center;
+  background-image: url('https://play.teleporthq.io/static/svg/default-img.svg');
+  background-position: center;
+}
 .member-details-image {
   width: 100px;
-  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);
+  height: 106px;
   object-fit: cover;
-  border-radius: var(--dl-radius-radius-round);
+  border-radius: var(--dl-radius-radius-radius25);
 }
 .member-details-text {
   color: var(--dl-color-secondary-100);

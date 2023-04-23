@@ -8,9 +8,8 @@ import { Component, Input } from '@angular/core'
 export class ServiceCard {
   @Input()
   text: string =
-    "Some quick example text to build on the card title and make up the bulk of the card's content."
+    'At the moment we only have one developer but we would be thrilled to hear about what we can add to improve your experience.'
   @Input()
-  heading: string = 'Excelent services'
-
+  heading: string = 'Suggest ideas'
   constructor() {}
 }

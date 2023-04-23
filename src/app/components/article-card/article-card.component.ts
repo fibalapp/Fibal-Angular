@@ -13,7 +13,7 @@ export class ArticleCard {
   @Input()
   new_prop: string = 'Portofino one of the best for remote working'
   @Input()
-  image_src: string = '/playground_assets/city-1-1400w.jpg'
+  image_src: string = '/assets/playground_assets/city-1-1400w.jpg'
   @Input()
   time: string = 'Published 3 days ago'
   @Input()
@@ -23,6 +23,5 @@ export class ArticleCard {
     "Finding temporary housing should be as easy as renting an Airbnb. That's th e idea behinf portofino, which raised $65 million to expand its pet sitting businesses. This come as the right move for the investment while the planet is moving on work from home..."
   @Input()
   image_alt: string = 'image'
-
   constructor() {}
 }

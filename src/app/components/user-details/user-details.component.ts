@@ -7,14 +7,13 @@ import { Component, Input } from '@angular/core'
 })
 export class UserDetails {
   @Input()
-  image_src: string = '/playground_assets/team4-200h.png'
+  image_src: string = '/assets/playground_assets/team4-200h.png'
   @Input()
   name: string = 'Laura Hanks'
   @Input()
   time: string = '3 days'
   @Input()
   image_alt: string = 'image'
-  raw8jsv: string = ' '
-
+  rawswsq: string = ' '
   constructor() {}
 }

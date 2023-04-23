@@ -33,19 +33,12 @@
   display: contents;
 }
 .header-container1 {
+  border: 2px dashed rgba(120, 120, 120, 0.4);
   display: flex;
   align-items: center;
   margin-right: var(--dl-space-space-unit);
   flex-direction: row;
   text-decoration: none;
-}
-.header-icon {
-  fill: var(--dl-color-gray-900);
-  width: 13px;
-}
-.header-text {
-  color: var(--dl-color-gray-white);
-  margin-left: var(--dl-space-space-halfunit);
 }
 .header-navlink2 {
   display: contents;
@@ -57,56 +50,29 @@
   flex-direction: row;
   text-decoration: none;
 }
-.header-icon02 {
+.header-icon {
   fill: var(--dl-color-gray-900);
   width: 13px;
 }
-.header-text1 {
+.header-text {
   color: var(--dl-color-gray-white);
   margin-left: var(--dl-space-space-halfunit);
 }
 .header-burger-menu {
+  border: 2px dashed rgba(120, 120, 120, 0.4);
   display: none;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
 }
-.header-icon07 {
-  width: 24px;
-  height: 24px;
-}
 .header-container3 {
   flex: 0 0 auto;
+  width: 200px;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 100px;
   display: flex;
   align-items: center;
   flex-direction: row;
-}
-.header-icon09 {
-  fill: var(--dl-color-gray-900);
-  width: 24px;
-  height: 24px;
-  margin-top: var(--dl-space-space-halfunit);
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-  margin-bottom: var(--dl-space-space-halfunit);
-}
-.header-icon11 {
-  fill: var(--dl-color-gray-900);
-  width: 24px;
-  height: 24px;
-  margin-top: var(--dl-space-space-halfunit);
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-  margin-bottom: var(--dl-space-space-halfunit);
-}
-.header-icon13 {
-  fill: var(--dl-color-gray-900);
-  width: 24px;
-  height: 24px;
-  margin-top: var(--dl-space-space-halfunit);
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-  margin-bottom: var(--dl-space-space-halfunit);
 }
 .header-mobile-menu {
   top: 0px;
@@ -145,7 +111,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.header-icon15 {
+.header-icon05 {
   width: 24px;
   height: 24px;
 }
@@ -165,11 +131,11 @@
   flex-direction: row;
   text-decoration: none;
 }
-.header-icon17 {
+.header-icon07 {
   fill: var(--dl-color-secondary-400);
   width: 13px;
 }
-.header-text2 {
+.header-text1 {
   color: var(--dl-color-secondary-400);
   margin-left: var(--dl-space-space-halfunit);
 }
@@ -182,11 +148,11 @@
   flex-direction: row;
   text-decoration: none;
 }
-.header-icon19 {
+.header-icon09 {
   fill: var(--dl-color-secondary-400);
   width: 13px;
 }
-.header-text3 {
+.header-text2 {
   color: var(--dl-color-secondary-400);
   margin-left: var(--dl-space-space-halfunit);
 }
@@ -197,7 +163,7 @@
   align-items: center;
   flex-direction: row;
 }
-.header-icon24 {
+.header-icon14 {
   fill: var(--dl-color-secondary-400);
   width: 24px;
   height: 24px;
@@ -205,7 +171,7 @@
   margin-right: 0.75rem;
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.header-icon26 {
+.header-icon16 {
   fill: var(--dl-color-secondary-400);
   width: 24px;
   height: 24px;
@@ -214,7 +180,7 @@
   margin-right: 0.75rem;
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.header-icon28 {
+.header-icon18 {
   fill: var(--dl-color-secondary-400);
   width: 24px;
   height: 24px;
@@ -231,27 +197,15 @@
     max-width: 1320px;
     margin-bottom: var(--dl-space-space-triplequarter);
   }
-  .header-icon09 {
+  .header-icon14 {
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  .header-icon11 {
+  .header-icon16 {
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  .header-icon13 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  .header-icon24 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  .header-icon26 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-  .header-icon28 {
+  .header-icon18 {
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -272,13 +226,15 @@
   .header-burger-menu {
     display: flex;
   }
-  .header-icon07 {
-    fill: var(--dl-color-secondary-400);
-  }
   .header-container3 {
     display: none;
   }
   .header-root-class-name {
     margin-bottom: 0px;
+  }
+}
+@media(max-width: 479px) {
+  .header-header {
+    padding-right: 0px;
   }
 }

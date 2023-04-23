@@ -12,6 +12,5 @@ export class Header {
   heading11: string = 'NOTUS PRO'
   @Input()
   heading1: string = 'FIBAL'
-
   constructor() {}
 }
