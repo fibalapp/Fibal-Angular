@@ -45,3 +45,11 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+dist/
+.angular
+/src/environments/**
+/public/**
+.firebase
+.firebaserc
+.firebase/
