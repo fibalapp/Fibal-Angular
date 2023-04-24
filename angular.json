@@ -4,7 +4,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "teleport-project-template-angular": {
+    "fibalteleport": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -14,7 +14,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/teleport-project-template-angular",
+            "outputPath": "dist/fibalteleport/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -40,7 +40,6 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
@@ -54,8 +53,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "6kb",
-                  "maximumError": "10kb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
                 }
               ]
             }
@@ -64,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "teleport-project-template-angular:build"
+            "browserTarget": "fibalteleport:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "teleport-project-template-angular:build:production"
+              "browserTarget": "fibalteleport:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "teleport-project-template-angular:build"
+            "browserTarget": "fibalteleport:build"
           }
         },
         "test": {
@@ -112,15 +111,72 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "teleport-project-template-angular:serve"
+            "devServerTarget": "fibalteleport:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "teleport-project-template-angular:serve:production"
+              "devServerTarget": "fibalteleport:serve:production"
             }
           }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/fibalteleport/server",
+            "main": "server.ts",
+            "tsConfig": "tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media",
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "sourceMap": false,
+              "extractLicenses": true,
+              "vendorChunk": false
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "configurations": {
+            "development": {
+              "browserTarget": "fibalteleport:build:development",
+              "serverTarget": "fibalteleport:server:development"
+            },
+            "production": {
+              "browserTarget": "fibalteleport:build:production",
+              "serverTarget": "fibalteleport:server:production"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "fibalteleport:build:production",
+              "serverTarget": "fibalteleport:server:production"
+            },
+            "development": {
+              "browserTarget": "fibalteleport:build:development",
+              "serverTarget": "fibalteleport:server:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }},
-  "defaultProject": "teleport-project-template-angular"
+  "defaultProject": "fibalteleport"
 }
