@@ -14,6 +14,6 @@ export class UserDetails {
   time: string = '3 days'
   @Input()
   image_alt: string = 'image'
-  rawswsq: string = ' '
+  raw1mpq: string = ' '
   constructor() {}
 }

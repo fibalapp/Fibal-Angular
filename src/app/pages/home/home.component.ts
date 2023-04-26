@@ -7,10 +7,10 @@ import { Title, Meta } from '@angular/platform-browser'
   styleUrls: ['home.component.css'],
 })
 export class Home {
-  rawwbyy: string = ' '
-  raw9z3o: string = ' '
-  rawdob7: string = ' '
-  raw5sik: string = ' '
+  rawuqpj: string = ' '
+  rawyvty: string = ' '
+  raw3b9s: string = ' '
+  rawnn20: string = ' '
   constructor(private title: Title, private meta: Meta) {
     this.title.setTitle('Making personal finance social')
     this.meta.addTags([
